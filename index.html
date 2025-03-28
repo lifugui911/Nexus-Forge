@@ -1,284 +1,210 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nexus Forge - 策略游戏的新境界</title>
-    <meta name="description" content="Nexus Forge是一款创新的在线策略游戏，让玩家在虚拟世界中建立自己的帝国，与其他玩家竞争或合作。">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        /* 自定义颜色变量 */
-        :root {
-            --apple-blue: #007AFF;
-            --apple-indigo: #5856D6;
-            --apple-purple: #AF52DE;
-            --apple-pink: #FF2D55;
-            --apple-red: #FF3B30;
-            --apple-orange: #FF9500;
-            --apple-yellow: #FFCC00;
-            --apple-green: #34C759;
-            --apple-teal: #5AC8FA;
-            --apple-gray-100: #F5F5F7;
-            --apple-gray-200: #E5E5EA;
-            --apple-gray-300: #D1D1D6;
-            --apple-gray-400: #C7C7CC;
-            --apple-gray-500: #AEAEB2;
-            --apple-gray-600: #8E8E93;
-            --apple-gray-700: #636366;
-            --apple-gray-800: #3A3A3C;
-            --apple-gray-900: #1C1C1E;
-        }
-
-        /* 应用自定义颜色 */
-        .text-apple-blue { color: var(--apple-blue); }
-        .text-apple-indigo { color: var(--apple-indigo); }
-        .text-apple-purple { color: var(--apple-purple); }
-        .text-apple-pink { color: var(--apple-pink); }
-        .text-apple-red { color: var(--apple-red); }
-        .text-apple-orange { color: var(--apple-orange); }
-        .text-apple-yellow { color: var(--apple-yellow); }
-        .text-apple-green { color: var(--apple-green); }
-        .text-apple-teal { color: var(--apple-teal); }
-        .text-apple-gray-100 { color: var(--apple-gray-100); }
-        .text-apple-gray-200 { color: var(--apple-gray-200); }
-        .text-apple-gray-300 { color: var(--apple-gray-300); }
-        .text-apple-gray-400 { color: var(--apple-gray-400); }
-        .text-apple-gray-500 { color: var(--apple-gray-500); }
-        .text-apple-gray-600 { color: var(--apple-gray-600); }
-        .text-apple-gray-700 { color: var(--apple-gray-700); }
-        .text-apple-gray-800 { color: var(--apple-gray-800); }
-        .text-apple-gray-900 { color: var(--apple-gray-900); }
-
-        .bg-apple-blue { background-color: var(--apple-blue); }
-        .bg-apple-indigo { background-color: var(--apple-indigo); }
-        .bg-apple-purple { background-color: var(--apple-purple); }
-        .bg-apple-pink { background-color: var(--apple-pink); }
-        .bg-apple-red { background-color: var(--apple-red); }
-        .bg-apple-orange { background-color: var(--apple-orange); }
-        .bg-apple-yellow { background-color: var(--apple-yellow); }
-        .bg-apple-green { background-color: var(--apple-green); }
-        .bg-apple-teal { background-color: var(--apple-teal); }
-        .bg-apple-gray-100 { background-color: var(--apple-gray-100); }
-        .bg-apple-gray-200 { background-color: var(--apple-gray-200); }
-        .bg-apple-gray-300 { background-color: var(--apple-gray-300); }
-        .bg-apple-gray-400 { background-color: var(--apple-gray-400); }
-        .bg-apple-gray-500 { background-color: var(--apple-gray-500); }
-        .bg-apple-gray-600 { background-color: var(--apple-gray-600); }
-        .bg-apple-gray-700 { background-color: var(--apple-gray-700); }
-        .bg-apple-gray-800 { background-color: var(--apple-gray-800); }
-        .bg-apple-gray-900 { background-color: var(--apple-gray-900); }
-
-        /* 自定义样式 */
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: var(--apple-gray-100);
-            color: var(--apple-gray-900);
-        }
-
-        .dark body {
-            background-color: var(--apple-gray-900);
-            color: var(--apple-gray-100);
-        }
-
-        .hero-section {
-            background: linear-gradient(135deg, var(--apple-blue), var(--apple-purple));
-            height: 70vh;
-            min-height: 500px;
-        }
-
-        .game-container {
-            height: 600px;
-        }
-
-        @media (max-width: 768px) {
-            .game-container {
-                height: 400px;
+    <title>Nexus-Forge: Epic Monster Survival Game | Play Online</title>
+    <meta name="description" content="Play Nexus-Forge online - an epic monster survival game where you forge your path through hordes of enemies. Free to play, no download required.">
+    <link rel="canonical" href="https://xiaoffi.online/">
+    <meta name="keywords" content="Nexus-Forge, monster survival game, online game, roguelike game, free browser game">
+    <meta property="og:title" content="Nexus-Forge: Epic Monster Survival Game">
+    <meta property="og:description" content="Play Nexus-Forge online - an epic monster survival game where you forge your path through hordes of enemies.">
+    <meta property="og:url" content="https://xiaoffi.online/">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://xiaoffi.online/images/nexus-forge-preview.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://cloud.onlinegames.io">
+    <link rel="dns-prefetch" href="https://cloud.onlinegames.io">
+    
+    <!-- Google Analytics 代码 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        apple: {
+                            blue: '#007AFF',
+                            indigo: '#5856D6',
+                            purple: '#AF52DE',
+                            pink: '#FF2D55',
+                            red: '#FF3B30',
+                            orange: '#FF9500',
+                            yellow: '#FFCC00',
+                            green: '#34C759',
+                            teal: '#5AC8FA',
+                            gray: {
+                                100: '#F2F2F7',
+                                200: '#E5E5EA',
+                                300: '#D1D1D6',
+                                400: '#C7C7CC',
+                                500: '#AEAEB2',
+                                600: '#8E8E93',
+                                700: '#636366',
+                                800: '#48484A',
+                                900: '#3A3A3C',
+                                950: '#1C1C1E',
+                            }
+                        }
+                    }
+                }
             }
         }
+    </script>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+        .game-container {
+            aspect-ratio: 16/9;
+            max-height: 80vh;
+        }
+        .img-error {
+            border: 1px dashed #FF3B30;
+        }
     </style>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "VideoGame",
+        "name": "Nexus-Forge",
+        "description": "An epic monster survival game where you forge your path through hordes of enemies.",
+        "genre": ["Action", "Roguelike", "Survival"],
+        "playMode": "SinglePlayer",
+        "applicationCategory": "Game",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+        },
+        "url": "https://xiaoffi.online/"
+    }
+    </script>
 </head>
-<body class="antialiased">
-    <header class="bg-apple-gray-900 text-white">
-        <div class="container mx-auto px-4">
-            <div class="flex justify-between items-center py-4">
-                <div class="flex items-center">
-                    <img src="https://img.icons8.com/fluency/48/null/fantasy.png" alt="Nexus Forge Logo" class="h-10 w-10 mr-3">
-                    <h1 class="text-xl font-bold">Nexus Forge</h1>
-                </div>
-                <nav class="hidden md:flex space-x-6">
-                    <a href="#features" class="hover:text-apple-blue transition">特色</a>
-                    <a href="#game" class="hover:text-apple-blue transition">游戏</a>
-                    <a href="#screenshots" class="hover:text-apple-blue transition">截图</a>
-                    <a href="#reviews" class="hover:text-apple-blue transition">评价</a>
-                    <a href="#contact" class="hover:text-apple-blue transition">联系我们</a>
-                </nav>
-                <div class="md:hidden">
-                    <button class="text-white focus:outline-none">
-                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-                        </svg>
-                    </button>
-                </div>
+<body class="bg-apple-gray-100 dark:bg-apple-gray-950 text-apple-gray-900 dark:text-white">
+    <!-- Cookie同意提示 -->
+    <div id="cookie-consent" class="fixed bottom-0 left-0 right-0 bg-apple-gray-900 text-white p-4 z-50 shadow-lg transform translate-y-full transition-transform duration-300">
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
+            <p class="mb-4 sm:mb-0">我们使用Cookie来改善您的浏览体验。继续使用本网站即表示您同意我们的<a href="#" class="text-apple-blue hover:underline">Cookie政策</a>。</p>
+            <button id="accept-cookies" class="bg-apple-blue hover:bg-blue-600 text-white px-4 py-2 rounded">接受</button>
+        </div>
+    </div>
+
+    <!-- 导航栏 -->
+    <nav class="bg-apple-gray-900 text-white py-2 px-4 sticky top-0 z-50 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-bold">Nexus-Forge</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#how-to-play" class="hover:text-apple-blue">How to Play</a>
+                <a href="#features" class="hover:text-apple-blue">Features</a>
+                <a href="#about" class="hover:text-apple-blue">About</a>
+                <a href="#faq" class="hover:text-apple-blue">FAQ</a>
             </div>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden py-2">
+            <a href="#how-to-play" class="block py-2 hover:text-apple-blue">How to Play</a>
+            <a href="#features" class="block py-2 hover:text-apple-blue">Features</a>
+            <a href="#about" class="block py-2 hover:text-apple-blue">About</a>
+            <a href="#faq" class="block py-2 hover:text-apple-blue">FAQ</a>
+        </div>
+    </nav>
+    
+    <header class="bg-apple-blue text-white py-6 px-4 md:px-8 shadow-lg">
+        <div class="container mx-auto">
+            <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center">Nexus-Forge: Monster Survival Adventure</h1>
+            <p class="text-xl md:text-2xl text-center mt-3 max-w-3xl mx-auto">Forge your destiny in an epic battle against endless waves of monsters!</p>
         </div>
     </header>
 
-    <section class="hero-section flex items-center justify-center text-white">
-        <div class="container mx-auto px-4 text-center">
-            <h1 class="text-4xl md:text-6xl font-bold mb-4">Nexus Forge</h1>
-            <p class="text-xl md:text-2xl mb-8">打造你的帝国，征服虚拟世界</p>
-            <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-4">
-                <a href="#game" class="bg-white text-apple-blue font-bold py-3 px-6 rounded-full hover:bg-apple-gray-200 transition">立即游戏</a>
-                <a href="#features" class="bg-transparent border-2 border-white text-white font-bold py-3 px-6 rounded-full hover:bg-white hover:text-apple-blue transition">了解更多</a>
+    <main class="container mx-auto px-4 py-8">
+        <!-- 游戏部分 -->
+        <section class="mb-12">
+            <div class="game-container w-full bg-black rounded-lg shadow-xl overflow-hidden relative">
+                <div id="loading-indicator" class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 z-10 transition-opacity duration-500">
+                    <div class="text-white text-center">
+                        <svg class="animate-spin h-10 w-10 mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                        </svg>
+                        <p>Loading Nexus-Forge...</p>
+                        <button id="close-loading" class="mt-4 px-4 py-2 bg-apple-blue rounded hover:bg-blue-600 transition">
+                            游戏已加载完成，点击开始游戏
+                        </button>
+                    </div>
+                </div>
+                <iframe id="game-iframe" src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html" 
+                        class="w-full h-full border-0" 
+                        allowfullscreen 
+                        title="Play Nexus-Forge Online">
+                </iframe>
             </div>
-        </div>
-    </section>
-
-    <main class="container mx-auto px-4 py-12">
-        <section id="features" class="mb-16">
-            <h2 class="text-2xl md:text-3xl font-bold mb-6 text-apple-blue">游戏特色</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-white dark:bg-apple-gray-800 p-6 rounded-xl shadow-md">
-                    <div class="text-apple-orange text-3xl mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2 text-apple-gray-900 dark:text-white">战略资源管理</h3>
-                    <p class="text-apple-gray-700 dark:text-apple-gray-300">收集和管理各种资源，建立强大的经济基础，支持你的军事行动和扩张计划。</p>
-                </div>
-                <div class="bg-white dark:bg-apple-gray-800 p-6 rounded-xl shadow-md">
-                    <div class="text-apple-green text-3xl mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2 text-apple-gray-900 dark:text-white">多人联盟系统</h3>
-                    <p class="text-apple-gray-700 dark:text-apple-gray-300">与其他玩家组成联盟，共同制定战略，协同作战，或者进行外交谈判以获取优势。</p>
-                </div>
-                <div class="bg-white dark:bg-apple-gray-800 p-6 rounded-xl shadow-md">
-                    <div class="text-apple-purple text-3xl mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-bold mb-2 text-apple-gray-900 dark:text-white">科技研发树</h3>
-                    <p class="text-apple-gray-700 dark:text-apple-gray-300">研发先进科技，解锁新的单位和建筑，为你的帝国提供战略优势和发展方向。</p>
-                </div>
-            </div>
-        </section>
-        
-        <section id="game" class="mb-16">
-            <h2 class="text-2xl md:text-3xl font-bold mb-6 text-apple-indigo">Play Nexus Forge Online</h2>
-            <div class="game-container w-full bg-apple-gray-200 dark:bg-apple-gray-800 rounded-xl shadow-xl overflow-hidden mx-auto">
-                <!-- 替换游戏iframe为更可靠的游戏或模拟内容 -->
-                <div class="w-full h-full flex flex-col items-center justify-center p-8 text-center">
-                    <img src="https://img.icons8.com/fluency/240/null/fantasy.png" alt="Nexus Forge Logo" class="h-24 w-24 mb-6">
-                    <h3 class="text-2xl font-bold mb-4 text-apple-blue">准备好开始你的冒险了吗？</h3>
-                    <p class="text-apple-gray-700 dark:text-apple-gray-300 mb-8 max-w-lg">
-                        Nexus Forge 正在加载中。我们的服务器正在为你准备一个独特的游戏体验。
+            <div class="bg-white dark:bg-apple-gray-900 rounded-lg p-4 mt-4 shadow-md">
+                <div class="flex flex-col sm:flex-row justify-between items-center">
+                    <p class="text-center text-apple-gray-600 dark:text-apple-gray-400 mb-2 sm:mb-0">
+                        Game not loading? <a href="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html" class="text-apple-blue hover:underline" target="_blank" rel="noopener">Open in new tab</a>
                     </p>
-                    <button id="start-game-btn" class="bg-apple-green text-white font-bold py-3 px-8 rounded-full hover:bg-green-600 transition transform hover:scale-105">
-                        开始游戏
-                    </button>
-                    <p class="mt-4 text-sm text-apple-gray-500">
-                        首次加载可能需要几秒钟时间，请耐心等待
-                    </p>
-                </div>
-            </div>
-        </section>
-        
-        <script>
-            // 游戏加载逻辑
-            document.addEventListener('DOMContentLoaded', function() {
-                const startGameBtn = document.getElementById('start-game-btn');
-                if (startGameBtn) {
-                    startGameBtn.addEventListener('click', function() {
-                        // 模拟游戏加载
-                        const gameContainer = document.querySelector('.game-container');
-                        gameContainer.innerHTML = '<div class="w-full h-full flex items-center justify-center"><div class="text-center"><div class="inline-block animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-apple-blue"></div><p class="mt-4">游戏加载中，请稍候...</p></div></div>';
-                        
-                        // 2秒后显示游戏界面
-                        setTimeout(function() {
-                            gameContainer.innerHTML = `
-                                <div class="w-full h-full bg-apple-gray-900 text-white p-8">
-                                    <div class="flex justify-between items-center mb-6">
-                                        <div class="flex items-center">
-                                            <img src="https://img.icons8.com/fluency/48/null/fantasy.png" alt="Nexus Forge Logo" class="h-8 w-8 mr-2">
-                                            <h3 class="text-xl font-bold">Nexus Forge</h3>
-                                        </div>
-                                        <div class="flex space-x-4">
-                                            <span class="bg-apple-blue px-3 py-1 rounded-full text-sm">资源: 1250</span>
-                                            <span class="bg-apple-green px-3 py-1 rounded-full text-sm">能量: 780</span>
-                                            <span class="bg-apple-orange px-3 py-1 rounded-full text-sm">人口: 45/50</span>
-                                        </div>
-                                    </div>
-                                    <div class="grid grid-cols-3 gap-4 mb-6">
-                                        <div class="bg-apple-gray-800 p-4 rounded-lg">
-                                            <h4 class="font-bold mb-2">主城</h4>
-                                            <p class="text-sm text-apple-gray-400">等级 5</p>
-                                            <button class="mt-2 bg-apple-blue text-white text-sm px-3 py-1 rounded hover:bg-blue-700">升级</button>
-                                        </div>
-                                        <div class="bg-apple-gray-800 p-4 rounded-lg">
-                                            <h4 class="font-bold mb-2">兵营</h4>
-                                            <p class="text-sm text-apple-gray-400">等级 3</p>
-                                            <button class="mt-2 bg-apple-blue text-white text-sm px-3 py-1 rounded hover:bg-blue-700">训练</button>
-                                        </div>
-                                        <div class="bg-apple-gray-800 p-4 rounded-lg">
-                                            <h4 class="font-bold mb-2">研究所</h4>
-                                            <p class="text-sm text-apple-gray-400">等级 4</p>
-                                            <button class="mt-2 bg-apple-blue text-white text-sm px-3 py-1 rounded hover:bg-blue-700">研究</button>
-                                        </div>
-                                    </div>
-                                    <div class="bg-apple-gray-800 p-4 rounded-lg">
-                                        <h4 class="font-bold mb-2">游戏消息</h4>
-                                        <div class="text-sm space-y-2">
-                                            <p><span class="text-apple-green">系统:</span> 欢迎来到Nexus Forge！</p>
-                                            <p><span class="text-apple-orange">任务:</span> 完成主城升级以解锁新建筑。</p>
-                                            <p><span class="text-apple-blue">联盟:</span> 玩家"星际领主"邀请你加入联盟。</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            `;
-                        }, 2000);
-                    });
-                }
-            });
-        </script>
-
-        <!-- 添加游戏截图区域 -->
-        <section id="screenshots" class="mb-16">
-            <h2 class="text-2xl md:text-3xl font-bold mb-6 text-apple-yellow">Game Screenshots</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div class="bg-apple-gray-200 dark:bg-apple-gray-800 rounded-xl overflow-hidden">
-                    <img src="https://via.placeholder.com/600x400/007AFF/FFFFFF?text=Nexus+Forge+Screenshot+1" alt="Nexus Forge Screenshot 1" class="w-full h-auto">
-                    <div class="p-3">
-                        <p class="text-sm text-apple-gray-700 dark:text-apple-gray-300">Epic battle scene with multiple factions</p>
-                    </div>
-                </div>
-                <div class="bg-apple-gray-200 dark:bg-apple-gray-800 rounded-xl overflow-hidden">
-                    <img src="https://via.placeholder.com/600x400/5856D6/FFFFFF?text=Nexus+Forge+Screenshot+2" alt="Nexus Forge Screenshot 2" class="w-full h-auto">
-                    <div class="p-3">
-                        <p class="text-sm text-apple-gray-700 dark:text-apple-gray-300">Base building and resource management</p>
-                    </div>
-                </div>
-                <div class="bg-apple-gray-200 dark:bg-apple-gray-800 rounded-xl overflow-hidden">
-                    <img src="https://via.placeholder.com/600x400/FF2D55/FFFFFF?text=Nexus+Forge+Screenshot+3" alt="Nexus Forge Screenshot 3" class="w-full h-auto">
-                    <div class="p-3">
-                        <p class="text-sm text-apple-gray-700 dark:text-apple-gray-300">Technology tree and unit upgrades</p>
+                    <div class="flex space-x-3">
+                        <span class="text-apple-gray-600 dark:text-apple-gray-400">Share:</span>
+                        <a href="https://twitter.com/intent/tweet?url=https://xiaoffi.online&text=Check out Nexus-Forge, an awesome monster survival game!" target="_blank" rel="noopener" class="text-blue-400 hover:text-blue-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://xiaoffi.online" target="_blank" rel="noopener" class="text-blue-600 hover:text-blue-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 添加用户评论区域 -->
-        <section id="reviews" class="mb-16">
-            <h2 class="text-2xl md:text-3xl font-bold mb-6 text-apple-orange">Player Reviews</h2>
+        <!-- 游戏截图部分 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 text-apple-blue">游戏截图</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="bg-white dark:bg-apple-gray-900 p-2 rounded-lg shadow-md">
+                    <img src="images/screenshot1.jpg" alt="Nexus-Forge gameplay screenshot" class="w-full h-auto rounded" 
+                         onerror="this.onerror=null; this.src='https://via.placeholder.com/400x225?text=史诗boss战'; this.classList.add('img-error');">
+                    <p class="text-center mt-2 text-sm text-apple-gray-600 dark:text-apple-gray-400">史诗boss战</p>
+                </div>
+                <div class="bg-white dark:bg-apple-gray-900 p-2 rounded-lg shadow-md">
+                    <img src="images/screenshot2.jpg" alt="Nexus-Forge character selection" class="w-full h-auto rounded"
+                         onerror="this.onerror=null; this.src='https://via.placeholder.com/400x225?text=选择你的角色'; this.classList.add('img-error');">
+                    <p class="text-center mt-2 text-sm text-apple-gray-600 dark:text-apple-gray-400">选择你的角色</p>
+                </div>
+                <div class="bg-white dark:bg-apple-gray-900 p-2 rounded-lg shadow-md">
+                    <img src="images/screenshot3.jpg" alt="Nexus-Forge power-ups" class="w-full h-auto rounded"
+                         onerror="this.onerror=null; this.src='https://via.placeholder.com/400x225?text=释放强大能力'; this.classList.add('img-error');">
+                    <p class="text-center mt-2 text-sm text-apple-gray-600 dark:text-apple-gray-400">释放强大能力</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 玩家评论部分 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 text-apple-blue">玩家评论</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="bg-white dark:bg-apple-gray-900 p-6 rounded-xl shadow-md">
+                <div class="bg-white dark:bg-apple-gray-900 p-6 rounded-lg shadow-md">
                     <div class="flex items-center mb-4">
                         <div class="flex text-apple-yellow">
-                            <!-- 5颗星 -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
@@ -288,22 +214,225 @@
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-apple-gray-300 dark:text-apple-gray-600" viewBox="0 0 20 20" fill="currentColor">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
                         </div>
-                        <span class="ml-2 text-apple-gray-700 dark:text-apple-gray-300">Alex J.</span>
+                        <span class="ml-2 font-bold">GameMaster42</span>
                     </div>
-                    <p class="text-apple-gray-700 dark:text-apple-gray-300">
-                        "Nexus Forge is the most addictive strategy game I've played in years! The balance between resource management and combat is perfect. I've spent countless hours building my empire."
-                    </p>
+                    <p>"Nexus-Forge非常上瘾！进度系统让我一直想回来玩更多，各种构建方式让每次游戏都感觉新鲜。"</p>
                 </div>
-                <div class="bg-white dark:bg-apple-gray-900 p-6 rounded-xl shadow-md">
+                <div class="bg-white dark:bg-apple-gray-900 p-6 rounded-lg shadow-md">
                     <div class="flex items-center mb-4">
                         <div class="flex text-apple-yellow">
-                            <!-- 4颗星 -->
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                             </svg>
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.37
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                            </svg>
+                        </div>
+                        <span class="ml-2 font-bold">PixelWarrior</span>
+                    </div>
+                    <p>"控制非常灵敏，升级系统设计得很好。我已经花了几个小时尝试不同的角色构建！"</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 游戏玩法部分 -->
+        <section id="how-to-play" class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="bg-white dark:bg-apple-gray-900 rounded-lg p-6 shadow-md">
+                <h2 class="text-2xl font-bold mb-4 text-apple-blue">如何游玩</h2>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>使用WASD或方向键移动你的角色</li>
+                    <li>自动攻击附近的敌人</li>
+                    <li>收集经验球以升级</li>
+                    <li>每次升级时选择一个新的能力或升级现有能力</li>
+                    <li>尽可能长时间生存，击败越来越强大的敌人</li>
+                    <li>收集掉落的物品以增强你的角色</li>
+                </ul>
+            </div>
+            <div class="bg-white dark:bg-apple-gray-900 rounded-lg p-6 shadow-md">
+                <h2 class="text-2xl font-bold mb-4 text-apple-blue">游戏特色</h2>
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>多种可解锁的角色，每个都有独特的能力</li>
+                    <li>数十种武器和被动能力组合</li>
+                    <li>随机生成的关卡和敌人生成</li>
+                    <li>挑战性的Boss战</li>
+                    <li>解锁永久升级以增强未来的游戏</li>
+                    <li>精美的像素艺术图形和动态音效</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 常见问题部分 -->
+        <section id="faq" class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 text-apple-blue">常见问题</h2>
+            <div class="space-y-4">
+                <div class="bg-white dark:bg-apple-gray-900 rounded-lg p-6 shadow-md">
+                    <h3 class="font-bold text-lg mb-2">游戏是否需要安装？</h3>
+                    <p>不需要。Nexus-Forge是一款完全基于浏览器的游戏，无需下载或安装任何内容。只需打开网页即可立即开始游戏。</p>
+                </div>
+                <div class="bg-white dark:bg-apple-gray-900 rounded-lg p-6 shadow-md">
+                    <h3 class="font-bold text-lg mb-2">游戏是否免费？</h3>
+                    <p>是的，Nexus-Forge完全免费游玩，没有任何隐藏费用或内购。</p>
+                </div>
+                <div class="bg-white dark:bg-apple-gray-900 rounded-lg p-6 shadow-md">
+                    <h3 class="font-bold text-lg mb-2">游戏支持哪些浏览器？</h3>
+                    <p>Nexus-Forge支持所有现代浏览器，包括Chrome、Firefox、Safari和Edge的最新版本。为获得最佳体验，我们建议使用Chrome浏览器。</p>
+                </div>
+                <div class="bg-white dark:bg-apple-gray-900 rounded-lg p-6 shadow-md">
+                    <h3 class="font-bold text-lg mb-2">游戏进度会保存吗？</h3>
+                    <p>是的，游戏会自动保存您的进度和解锁内容。只要您使用相同的浏览器和设备，下次访问时可以继续您的游戏。</p>
+                </div>
+                <div class="bg-white dark:bg-apple-gray-900 rounded-lg p-6 shadow-md">
+                    <h3 class="font-bold text-lg mb-2">游戏是否支持移动设备？</h3>
+                    <p>虽然可以在移动设备上访问游戏，但Nexus-Forge主要为桌面体验设计。为获得最佳游戏体验，我们建议使用电脑或笔记本电脑。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 关于部分 -->
+        <section id="about" class="mb-12">
+            <h2 class="text-2xl font-bold mb-6 text-apple-blue">关于Nexus-Forge</h2>
+            <div class="bg-white dark:bg-apple-gray-900 rounded-lg p-6 shadow-md">
+                <p class="mb-4">Nexus-Forge是一款受经典roguelike和生存游戏启发的动作冒险游戏。在这个充满危险的世界中，你将面对无尽的怪物浪潮，收集强大的装备和能力，并尽可能长时间地生存下去。</p>
+                <p class="mb-4">游戏融合了roguelike元素和生存机制，每次游戏都提供独特的体验。随着时间的推移，敌人会变得更强大，但你也会解锁新的角色、武器和能力，让你能够应对越来越具有挑战性的敌人。</p>
+                <p>无论你是喜欢快节奏动作游戏的老玩家，还是寻找休闲但有深度游戏体验的新手，Nexus-Forge都能提供数小时的娱乐。准备好迎接挑战了吗？</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-apple-gray-900 text-white py-8 px-4">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Nexus-Forge</h3>
+                    <p class="text-apple-gray-400">一款史诗级怪物生存游戏，免费在线游玩，无需下载。</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">快速链接</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-apple-gray-400 hover:text-white">主页</a></li>
+                        <li><a href="#how-to-play" class="text-apple-gray-400 hover:text-white">如何游玩</a></li>
+                        <li><a href="#features" class="text-apple-gray-400 hover:text-white">游戏特色</a></li>
+                        <li><a href="#about" class="text-apple-gray-400 hover:text-white">关于我们</a></li>
+                        <li><a href="#faq" class="text-apple-gray-400 hover:text-white">常见问题</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">联系我们</h3>
+                    <p class="text-apple-gray-400 mb-2">有问题或建议？请联系我们！</p>
+                    <a href="mailto:contact@xiaoffi.online" class="text-apple-blue hover:underline">contact@xiaoffi.online</a>
+                </div>
+            </div>
+            <div class="border-t border-apple-gray-800 mt-8 pt-8 text-center text-apple-gray-400">
+                <p>&copy; 2023 Nexus-Forge. 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // 移动菜单控制
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Cookie同意提示
+        document.addEventListener('DOMContentLoaded', function() {
+            const cookieConsent = document.getElementById('cookie-consent');
+            const acceptCookies = document.getElementById('accept-cookies');
+            
+            // 检查是否已经接受过Cookie
+            if (!localStorage.getItem('cookieConsent')) {
+                // 显示Cookie提示
+                setTimeout(function() {
+                    cookieConsent.style.transform = 'translateY(0)';
+                }, 1000);
+            }
+            
+            // 接受Cookie按钮点击事件
+            acceptCookies.addEventListener('click', function() {
+                localStorage.setItem('cookieConsent', 'true');
+                cookieConsent.style.transform = 'translateY(full)';
+            });
+        });
+
+        // 游戏加载处理
+        window.addEventListener('load', function() {
+            const gameIframe = document.getElementById('game-iframe');
+            const loadingIndicator = document.getElementById('loading-indicator');
+            const closeLoading = document.getElementById('close-loading');
+            
+            // 设置一个超时时间，确保加载指示器最终会被隐藏
+            setTimeout(function() {
+                loadingIndicator.style.opacity = '0';
+                setTimeout(function() {
+                    loadingIndicator.style.display = 'none';
+                }, 500);
+            }, 5000); // 5秒后强制隐藏加载指示器
+            
+            // 手动关闭加载指示器按钮
+            closeLoading.addEventListener('click', function() {
+                loadingIndicator.style.opacity = '0';
+                setTimeout(function() {
+                    loadingIndicator.style.display = 'none';
+                }, 500);
+            });
+            
+            // 监听iframe加载完成事件
+            gameIframe.addEventListener('load', function() {
+                // 给加载指示器添加淡出效果
+                loadingIndicator.style.opacity = '0';
+                setTimeout(function() {
+                    loadingIndicator.style.display = 'none';
+                }, 500);
+            });
+        });
+    </script>
+</body>
+</html>
